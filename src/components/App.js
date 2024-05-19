@@ -97,7 +97,9 @@ class App extends Component {
         <button id="clear" data-testid="clear" onClick={this.handleClear}>
           Clear
         </button>
-        <h3 id="answer">{this.state.relation}</h3>
+        <h3 id="answer" data-testid="answer">
+          {this.state.relation}
+        </h3>
         {/* Do not remove the main div */}
       </div>
     );
