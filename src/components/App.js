@@ -75,20 +75,26 @@ class App extends Component {
       <div id="main">
         <input
           id="input1"
+          data-testid="input1"
           name="name1"
           onChange={this.handleChange1}
           value={this.state.input1}
         />
         <input
           id="input2"
+          data-testid="input2"
           name="name2"
           onChange={this.handleChange2}
           value={this.state.input2}
         />
-        <button id="calculate_relationship" onClick={this.handleSubmit}>
+        <button
+          id="calculate_relationship"
+          data-testid="calculate_relationship"
+          onClick={this.handleSubmit}
+        >
           Calculate
         </button>
-        <button id="clear" onClick={this.handleClear}>
+        <button id="clear" data-testid="clear" onClick={this.handleClear}>
           Clear
         </button>
         <h3 id="answer">{this.state.relation}</h3>
